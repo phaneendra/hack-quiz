@@ -5,8 +5,10 @@
   </a>
 </p>
 <h1 align="center">
-  Gatsby's blog starter
+  Hack Quiz
 </h1>
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/1f4758a3-0a5b-4f88-9bf0-9f7c98163b6e/deploy-status)](https://app.netlify.com/sites/hackquiz/deploys)
 
 Kick off your project with this blog boilerplate. This starter ships with the main Gatsby configuration files you might need to get up and running blazing fast with the blazing fast app generator for React.
 
