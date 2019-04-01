@@ -1,0 +1,25 @@
+{
+  "name": "hack-quiz",
+  "version": "1.0.0",
+  "description": "Where a smart answer won't get you fired!",
+  "main": "gatsby-config.js",
+  "repository": "git+https://github.com/phaneendra/hack-quiz/tree/master/sites/hack-quiz",
+  "author": "phaneendra",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "start": "npm run develop",
+    "serve": "gatsby serve",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
+  },
+  "dependencies": {
+    "gatsby": "^2.3.4",
+    "gatsby-plugin-manifest": "^2.0.26",
+    "gatsby-plugin-netlify-cms": "^3.0.17",
+    "netlify-cms": "^2.9.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  }
+}

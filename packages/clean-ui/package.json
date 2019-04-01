@@ -1,0 +1,30 @@
+{
+  "name": "clean-ui",
+  "version": "1.0.0",
+  "description": "app template that works",
+  "main": "index.js",
+  "repository": "git+https://github.com/phaneendra/hack-quiz/tree/master/packages/clean-ui",
+  "author": "phaneendra",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "@mdx-js/mdx": "^0.20.3",
+    "@mdx-js/tag": "^0.20.3",
+    "antd": "^3.16.1",
+    "gatsby": "^2.3.4",
+    "gatsby-mdx": "^0.4.4",
+    "gatsby-plugin-antd": "^2.0.2",
+    "gatsby-plugin-less": "^2.0.12",
+    "gatsby-plugin-offline": "^2.0.25",
+    "gatsby-plugin-page-creator": "^2.0.12",
+    "gatsby-plugin-react-helmet": "^3.0.11",
+    "gatsby-plugin-sharp": "^2.0.32",
+    "gatsby-source-filesystem": "^2.0.28",
+    "gatsby-transformer-sharp": "^2.1.17",
+    "less": "^3.9.0",
+    "prop-types": "^15.7.2",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-helmet": "^5.2.0"
+  }
+}
