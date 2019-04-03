@@ -4,19 +4,123 @@
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/1f4758a3-0a5b-4f88-9bf0-9f7c98163b6e/deploy-status)](https://app.netlify.com/sites/hackquiz/deploys)
 
-Kick off your project with this blog boilerplate. This starter ships with the main Gatsby configuration files you might need to get up and running blazing fast with the blazing fast app generator for React.
+> This is an WIP project to collect various question and answers in quiz format that I have come accross.
 
-_Have another more specific idea? You may want to check out our vibrant collection of [official and community-created starters](https://www.gatsbyjs.org/docs/gatsby-starters/)._
+<br>
+
+:information_source: &nbsp;This project contains test questions and answers that can be used as a test your knowledge or during an interview/exam.
+
+:heavy_check_mark: &nbsp;The answers are only **examples** and do not exhaust the whole topic. Most of them contains **useful resources** for a deeper understanding.
+
+:warning: &nbsp;Questions marked **`***`** don't have answer yet or answer is incomplete - **make a pull request to add them**!
+
+:traffic_light: &nbsp;If you find a question which doesn't make sense, or one of the answers doesn't seem right, or something seems really stupid; **please make a pull request**.
+
+<br>
+
+<p align="center">
+  » <b><code><a href="https://github.com/phaneendra/hack-quiz/issues">All suggestions are welcome</a></code></b> «
+</p>
+
+<br>
+
+## Table of Contents
+
+| <b><u>The type of chapter</u></b>                                                        | <b><u>Short description</u></b> |
+| :--------------------------------------------------------------------------------------- | :------------------------------ |
+| <b>[AWS](#)</b>                                                                          |                                 |
+| :small_orange_diamond: [Ec2 and Compute](../blob/master/data/aws/ec2-compute.md)         |                                 |
+| :small_orange_diamond: [VPC and Networks](../blob/master/data/aws/vpc.md)                |                                 |
+| :small_orange_diamond: [DNS and Route53](../blob/master/data/aws/dns-r53.md)             |                                 |
+| :small_orange_diamond: [Storage Services](../blob/master/data/aws/storage-services.md)   |                                 |
+| :small_orange_diamond: [Database Services](../blob/master/data/aws/database-services.md) |                                 |
+
+<br>
+
+# Usage
+
+Loosely based on [Petr Trofimov's Quiztext](https://github.com/ptrofimov/quiztext), write quizzes using a markdown-like syntax which gets parsed into JSON. It supports radio (one selection), checkbox (multi select), and range (one selection, with syntactical sugar) questions, and looks like this:
+
+```
+Question 1: Why would I use this?
+- [ ] ( ) You want to easily write quizzes that can be parsed into JavaScript
+- [ ] (*) Some questions might have a right answer
+- [ ] (A) Answers might have different values than labels
+
+<details><summary>Answer</summary>
+<p>A</p>
+</details>
+<details><summary>Description</summary>
+<p>your notes</p>
+</details>
+
+What about checkboxes?
+- [ ] [ ] Write checkbox ("multi-select") questions with square brackets
+- [ ] [*] These can have...
+- [ ] [*] Multiple right answers, or just one
+- [ ] [*B] They can also have different values than labels
+
+<details><summary>Answer</summary>
+<p>A,B</p>
+</details>
+<details><summary>Description</summary>
+<p>your notes description or explanation</p>
+</details>
+
+```
+
+These would get parsed into friendly JSON:
+
+```js
+[{
+  question: 'Question 1: Why would I use this?',
+  type: 'radio',
+  answers: [{
+    name: 'You want to easily write quizzes that can be parsed into JavaScript',
+    value: 'You want to easily write quizzes that can be parsed into JavaScript'
+  }, {
+    name: 'Some questions might have a right answer',
+    value: 'Some questions might have a right answer',
+    correct: true
+  }, {
+    name: 'Answers might have different values than labels',
+    value: 'A'
+  }],
+  answer: [{A}],
+  decsription: 'your notes'
+}, {
+  question: 'What about multi-select?',
+  type: 'checkbox',
+  answers: [{
+    name: 'Write multi-select (colloquially "checkbox") questions with square brackets',
+    value: 'Write multi-select (colloquially "checkbox") questions with square brackets'
+  }, {
+    name: 'These can have...',
+    value: 'These can have...',
+    correct: true
+  }, {
+    name: 'Multiple right answers, or just one',
+    value: 'Multiple right answers, or just one',
+    correct: true
+  }, {
+    name: 'They can also have different values than labels',
+    value: 'B',
+    correct: true
+  }],
+  answer: [{A,B,C}],
+  decsription: 'your notes'
+}]
+```
 
 ## 🚀 Quick start
 
-1.  **Create a Gatsby site.**
+1.  **Clone this repo**
 
-    Use the Gatsby CLI to create a new site, specifying the blog starter.
+    fork or clone this repo and start submitting PR's.
 
     ```sh
-    # create a new Gatsby site using the blog starter
-    gatsby new my-blog-starter https://github.com/gatsbyjs/gatsby-starter-blog
+    # clone this repo
+    git clone https://github.com/phaneendra/hack-quiz
     ```
 
 2.  **Start developing.**
@@ -24,8 +128,8 @@ _Have another more specific idea? You may want to check out our vibrant collecti
     Navigate into your new site’s directory and start it up.
 
     ```sh
-    cd my-blog-starter/
-    gatsby develop
+    cd sites/hackquiz
+    npm start
     ```
 
 3.  **Open the source code and start editing!**
@@ -34,11 +138,11 @@ _Have another more specific idea? You may want to check out our vibrant collecti
 
     _Note: You'll also see a second link: _`http://localhost:8000/___graphql`_. This is a tool you can use to experiment with querying your data. Learn more about using this tool in the [Gatsby tutorial](https://www.gatsbyjs.org/tutorial/part-five/#introducing-graphiql)._
 
-    Open the `my-blog-starter` directory in your code editor of choice and edit `src/pages/index.js`. Save your changes and the browser will update in real time!
+    Open the `sites/hackquiz` directory in your code editor of choice and edit `src/pages/index.js`. Save your changes and the browser will update in real time!
 
 ## 🧐 What's inside?
 
-A quick look at the top-level files and directories you'll see in a Gatsby project.
+A quick look at the top-level files and directories you'll see in a Site.
 
     .
     ├── node_modules
