@@ -12,7 +12,7 @@
 
 :heavy_check_mark: &nbsp;The answers are only **examples** and do not exhaust the whole topic. Most of them contains **useful resources** for a deeper understanding.
 
-:warning: &nbsp;Questions marked **`***`** don't have answer yet or answer is incomplete - **make a pull request to add them**!
+:warning: &nbsp;Questions marked **`\***`** don't have answer yet or answer is incomplete - **make a pull request to add them\*\*!
 
 :traffic_light: &nbsp;If you find a question which doesn't make sense, or one of the answers doesn't seem right, or something seems really stupid; **please make a pull request**.
 
@@ -26,14 +26,15 @@
 
 ## Table of Contents
 
-| <b><u>The type of chapter</u></b>                                                        | <b><u>Short description</u></b> |
-| :--------------------------------------------------------------------------------------- | :------------------------------ |
-| <b>[AWS](#)</b>                                                                          |                                 |
-| :small_orange_diamond: [Ec2 and Compute](../blob/master/data/aws/ec2-compute.md)         |                                 |
-| :small_orange_diamond: [VPC and Networks](../blob/master/data/aws/vpc.md)                |                                 |
-| :small_orange_diamond: [DNS and Route53](../blob/master/data/aws/dns-r53.md)             |                                 |
-| :small_orange_diamond: [Storage Services](../blob/master/data/aws/storage-services.md)   |                                 |
-| :small_orange_diamond: [Database Services](../blob/master/data/aws/database-services.md) |                                 |
+| <b><u>The type of chapter</u></b>                                                    | <b><u>Short description</u></b>                                                           |
+| :----------------------------------------------------------------------------------- | :---------------------------------------------------------------------------------------- |
+| <b>[AWS](#)</b>                                                                      |                                                                                           |
+| :small_orange_diamond: [Introduction to AWS](../master/data/aws/introduction-aws.md) | General AWS questions                                                                     |
+| :small_orange_diamond: [Storage Services](../master/data/aws/storage-services.md)    | Questions related to Amazon Simple Storage Service (Amazon S3) and Amazon Glacier Storage |
+| :small_orange_diamond: [Ec2 and Compute](../master/data/aws/ec2-compute.md)          |                                                                                           |
+| :small_orange_diamond: [VPC and Networks](../master/data/aws/vpc.md)                 |                                                                                           |
+| :small_orange_diamond: [DNS and Route53](../master/data/aws/dns-r53.md)              |                                                                                           |
+| :small_orange_diamond: [Database Services](../master/data/aws/database-services.md)  |                                                                                           |
 
 <br>
 
@@ -43,9 +44,9 @@ Loosely based on [Petr Trofimov's Quiztext](https://github.com/ptrofimov/quiztex
 
 ```
 Question 1: Why would I use this?
-- [ ] ( ) You want to easily write quizzes that can be parsed into JavaScript
-- [ ] (*) Some questions might have a right answer
-- [ ] (A) Answers might have different values than labels
+- ( ) You want to easily write quizzes that can be parsed into JavaScript
+- (*) Some questions might have a right answer
+- (A) Answers might have different values than labels
 
 <details><summary>Answer</summary>
 <p>A</p>
@@ -55,10 +56,10 @@ Question 1: Why would I use this?
 </details>
 
 What about checkboxes?
-- [ ] [ ] Write checkbox ("multi-select") questions with square brackets
-- [ ] [*] These can have...
-- [ ] [*] Multiple right answers, or just one
-- [ ] [*B] They can also have different values than labels
+- [ ] Write checkbox ("multi-select") questions with square brackets
+- [*] These can have...
+- [*] Multiple right answers, or just one
+- [*B] They can also have different values than labels
 
 <details><summary>Answer</summary>
 <p>A,B</p>
@@ -72,44 +73,60 @@ What about checkboxes?
 These would get parsed into friendly JSON:
 
 ```js
-[{
-  question: 'Question 1: Why would I use this?',
-  type: 'radio',
-  answers: [{
-    name: 'You want to easily write quizzes that can be parsed into JavaScript',
-    value: 'You want to easily write quizzes that can be parsed into JavaScript'
-  }, {
-    name: 'Some questions might have a right answer',
-    value: 'Some questions might have a right answer',
-    correct: true
-  }, {
-    name: 'Answers might have different values than labels',
-    value: 'A'
-  }],
-  answer: [{A}],
-  decsription: 'your notes'
-}, {
-  question: 'What about multi-select?',
-  type: 'checkbox',
-  answers: [{
-    name: 'Write multi-select (colloquially "checkbox") questions with square brackets',
-    value: 'Write multi-select (colloquially "checkbox") questions with square brackets'
-  }, {
-    name: 'These can have...',
-    value: 'These can have...',
-    correct: true
-  }, {
-    name: 'Multiple right answers, or just one',
-    value: 'Multiple right answers, or just one',
-    correct: true
-  }, {
-    name: 'They can also have different values than labels',
-    value: 'B',
-    correct: true
-  }],
-  answer: [{A,B,C}],
-  decsription: 'your notes'
-}]
+;[
+  {
+    question: "Question 1: Why would I use this?",
+    type: "radio",
+    answers: [
+      {
+        name:
+          "You want to easily write quizzes that can be parsed into JavaScript",
+        value:
+          "You want to easily write quizzes that can be parsed into JavaScript",
+      },
+      {
+        name: "Some questions might have a right answer",
+        value: "Some questions might have a right answer",
+        correct: true,
+      },
+      {
+        name: "Answers might have different values than labels",
+        value: "A",
+      },
+    ],
+    answer: [{ A }],
+    decsription: "your notes",
+  },
+  {
+    question: "What about multi-select?",
+    type: "checkbox",
+    answers: [
+      {
+        name:
+          'Write multi-select (colloquially "checkbox") questions with square brackets',
+        value:
+          'Write multi-select (colloquially "checkbox") questions with square brackets',
+      },
+      {
+        name: "These can have...",
+        value: "These can have...",
+        correct: true,
+      },
+      {
+        name: "Multiple right answers, or just one",
+        value: "Multiple right answers, or just one",
+        correct: true,
+      },
+      {
+        name: "They can also have different values than labels",
+        value: "B",
+        correct: true,
+      },
+    ],
+    answer: [{ A, B, C }],
+    decsription: "your notes",
+  },
+]
 ```
 
 ## 🚀 Quick start
