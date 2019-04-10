@@ -26,15 +26,15 @@
 
 ## Table of Contents
 
-| <b><u>The type of chapter</u></b>                                                    | <b><u>Short description</u></b>                                                           |
-| :----------------------------------------------------------------------------------- | :---------------------------------------------------------------------------------------- |
-| <b>[AWS](#)</b>                                                                      |                                                                                           |
-| :small_orange_diamond: [Introduction to AWS](../master/data/aws/introduction-aws.md) | General AWS questions                                                                     |
-| :small_orange_diamond: [Storage Services](../master/data/aws/storage-services.md)    | Questions related to Amazon Simple Storage Service (Amazon S3) and Amazon Glacier Storage |
-| :small_orange_diamond: [Ec2 and Compute](../master/data/aws/ec2-compute.md)          |                                                                                           |
-| :small_orange_diamond: [VPC and Networks](../master/data/aws/vpc.md)                 |                                                                                           |
-| :small_orange_diamond: [DNS and Route53](../master/data/aws/dns-r53.md)              |                                                                                           |
-| :small_orange_diamond: [Database Services](../master/data/aws/database-services.md)  |                                                                                           |
+| <b><u>The type of chapter</u></b>                                                    | <b><u>Short description</u></b>                                                                            |
+| :----------------------------------------------------------------------------------- | :--------------------------------------------------------------------------------------------------------- |
+| <b>[AWS](#)</b>                                                                      |                                                                                                            |
+| :small_orange_diamond: [Introduction to AWS](../master/data/aws/introduction-aws.md) | General AWS questions                                                                                      |
+| :small_orange_diamond: [Storage Services](../master/data/aws/storage-services.md)    | Questions related to Amazon Simple Storage Service (Amazon S3) and Amazon Glacier Storage                  |
+| :small_orange_diamond: [Ec2 and Compute](../master/data/aws/ec2-compute.md)          | Questions related to Amazon Elastic Compute Cloud (Amazon EC2) and Amazon Elastic Block Store (Amazon EBS) |
+| :small_orange_diamond: [VPC and Networks](../master/data/aws/vpc.md)                 | Amazon Virtual Private Cloud (Amazon VPC) Questions                                                        |
+| :small_orange_diamond: [DNS and Route53](../master/data/aws/dns-r53.md)              |                                                                                                            |
+| :small_orange_diamond: [Database Services](../master/data/aws/database-services.md)  |                                                                                                            |
 
 <br>
 
